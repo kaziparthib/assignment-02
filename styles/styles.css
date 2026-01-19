@@ -20,15 +20,64 @@ body{
 
 }
 header{
-  
- 
- height: 760px;
+  background-color: #1A0B2E;
+}
+/* banner */
+
+.banner{
+  height: 760px;
  background-image: url(../assets/hero-bg.png);
  background-repeat: no-repeat;
- background-size: cover;
+ background-size:cover;
  background-position: center;
- /* background-attachment: fixed; */
-
+ position: relative;
+}
+.circle{
+  position: absolute;
+  top: 10%;
+  left: 39%;
+}
+.microphone{
+  position: absolute;
+  left: 46.4%;
+  top: 19.8%;
+}
+.badge{
+  background-color: #00FF88;
+  padding: 8px 15px;
+  border-radius: 1000px;
+  position: absolute;
+  top: 14%;
+  left: 56%;
+}
+.big-text{
+  position: absolute;
+  top: 60%;
+  left: 45%;
+}
+.daily{
+  position: absolute;
+  top: 68%;
+  left: 35%;
+}
+.spotify{
+  width: 200px;
+  padding: 12px 19px;
+  border-radius: 32px;
+  position: absolute;
+  top: 73%;
+  left:41% ;
+}
+.Subscribe{
+  width: 144px;
+  padding: 12px 19px;
+   border-radius: 32px;
+   position: absolute;
+   top: 73%;
+   left: 54%;
+   background: transparent;
+   border: 1px solid #00FF88;
+   color: #00FF88;
 }
 
 /* for same color text */
@@ -172,9 +221,32 @@ hr{
   margin:6px 6px 6px 6px ;
 }
 .h{
+  text-align: center;
   padding-top: 50px;
+  padding-bottom: 30px;
 }
 
+
+.alex{
+  max-width: 1200px;
+  margin: 0 200px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color:  #250D44;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px;
+}
+.bio h1,p{
+  margin-bottom: 8px;
+}
+ .img-container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ }
+ 
 @media screen and (max-width:576px) {
   .nav-links{
     display: none;
@@ -206,6 +278,10 @@ hr{
     padding: 40px 40px 9px 40px; 
   grid-template-columns: repeat(1, 1fr);
   
+}
+.alex{
+  flex-direction: column;
+  margin: 0 18px;
 }
   
 }
