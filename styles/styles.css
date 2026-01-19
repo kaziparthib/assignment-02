@@ -143,6 +143,38 @@ hr{
   margin-top: 8px;
 }
 
+.f{
+  background-color: #1A0B2E;
+}
+.ep-container{
+  padding: 90px 100px 9px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.ep-container>*{
+  border-radius: 10px;
+}
+.ep{
+  
+  background-color: #250D44;
+  
+}
+
+.ep iframe{
+  width: 100%;
+  border-radius: 10px;
+}
+.ep h3{
+  margin: 8px 8px 6px 8px;
+}
+.ep p{
+  margin:6px 6px 6px 6px ;
+}
+.h{
+  padding-top: 50px;
+}
+
 @media screen and (max-width:576px) {
   .nav-links{
     display: none;
@@ -168,6 +200,12 @@ hr{
   " global"
   "exclusive"
   "resource";
+}
+
+.ep-container{
+    padding: 40px 40px 9px 40px; 
+  grid-template-columns: repeat(1, 1fr);
+  
 }
   
 }
