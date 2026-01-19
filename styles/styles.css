@@ -7,6 +7,13 @@
 body{
   max-width: 1600px;
 }
+.gradient{
+  background: linear-gradient( #F7E93F, #FB09B4, #9100F8  );
+    -webkit-text-fill-color: 
+    transparent;
+     -webkit-background-clip: text;
+     background-clip: text;
+}
 
 .inter {
   font-family: "Inter", sans-serif;
@@ -14,10 +21,13 @@ body{
 }
 header{
   
- border: 2px solid green ;
+ 
  height: 760px;
  background-image: url(../assets/hero-bg.png);
  background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ /* background-attachment: fixed; */
 
 }
 
@@ -25,13 +35,15 @@ header{
 .color-fffff{
   color: #FFFFFF;
 }
+.color-00FF88{
+  color: #00FF88;
+}
 /* NAV */
 .navbar{
   display:flex ;
   justify-content:space-between;
   align-items: center;
-  
-  padding: 1rem 10rem;
+  padding: 1rem 10rem; 
  }
 .nav-links{
   display: flex;
@@ -49,9 +61,113 @@ header{
   height: 3rem ;
   cursor: pointer;
 }
+/* About the Podcast */
+main{
+  height: 646px;
+  background-color: #1A0B2E;
+}
+.podcast{
+  padding-top: 3.5rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.podcast h1{
+  margin-bottom: 1rem;
+}
+.j{
+  margin-top: 1rem;
+}
+.cards{
+  max-width: 1200px;
+  margin: 11rem 12rem 8rem 12rem;
+  display: grid;
+  grid-template-columns: repeat(4 , 12rem);
+  gap: 5rem;
+  justify-content: center;
+}
+hr{
+  max-width: 1200px;
+  margin: 5rem auto;
+}
+
+.card{
+  
+  text-align: center;
+}
+/* why techwave */
+.d{
+  background-color: #230E3D;
+  padding-top: 30px;
+}
+.d h1{
+  text-align: center;
+}
+
+#tech-wave{
+  padding:  80px 100px 100px;
+  display: grid;
+  gap: 13px;
+  background-color: #230E3D;
+  justify-content: center;
+  grid-template-areas: 
+  "audio mobile mobile"
+  "audio global global"
+  "exclusive exclusive resource ";
+}
+#tech-wave>*{
+  /* border: 2px solid gold; */
+  padding: 40px 12px 15px 40px;
+  border-radius: 10px;
+  background-color: rgba(53, 17, 101, 0.4);
+}
+.audio{
+  grid-area: audio;
+}
+.mobile{
+  grid-area: mobile;
+}
+.global{
+  grid-area: global;
+}
+.exclusive{
+  grid-area: exclusive;
+}
+.resource{
+  grid-area: resource;
+}
+
+.paragraph{
+  margin-top: 8px;
+}
+
 @media screen and (max-width:576px) {
   .nav-links{
     display: none;
   }
+  /* About the Podcast */
+  .podcast{
+   padding: 10px 10px 10px 10px;
+  }
+  hr{
+  max-width: 400px;
+  margin: 5rem auto;
+}
+.cards{
+  grid-template-columns: repeat(2 , 1fr);
+  margin: 0;
+}
+/* why techwave */
+#tech-wave{
+ 
+  grid-template-areas: 
+  "audio "
+  "mobile"
+  " global"
+  "exclusive"
+  "resource";
+}
   
 }
