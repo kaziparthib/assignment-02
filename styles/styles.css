@@ -5,6 +5,21 @@
   box-sizing: border-box;
 }
 
+/* animation */
+@keyframes up-down {
+  
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-12px);
+  }
+}
+.animation{
+   animation: up-down 1.2s ease-in-out infinite alternate;
+}
+
+
 body{
   max-width: 1600px;
 }
